@@ -32,7 +32,7 @@ void append(int element, Node *list) {
     newLast->next = NULL;
 }
 
-void insert(int element, Node *list, Node *position) {
+void insert(int element, Node *position) {
     Node *temp;
     temp = (Node *) malloc(sizeof(Node));
     temp->element = element;
