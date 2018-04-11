@@ -21,7 +21,7 @@ Node *createList(int element) {
     return L;
 }
 
-void append(int element, Node *list) {
+void appendList(int element, Node *list) {
     Node *newLast;
     newLast = (Node *) malloc(sizeof(Node));
     newLast->element = element;
@@ -32,7 +32,7 @@ void append(int element, Node *list) {
     newLast->next = NULL;
 }
 
-void insert(int element, Node *position) {
+void insertList(int element, Node *position) {
     Node *temp;
     temp = (Node *) malloc(sizeof(Node));
     temp->element = element;
@@ -47,7 +47,7 @@ Node *findPrev(int element, Node *list) {
     return list;
 }
 
-void delete(int element, Node *list) {
+void deleteList(int element, Node *list) {
     Node *prev;
     Node *temp;
     prev = findPrev(element, list);
@@ -56,7 +56,7 @@ void delete(int element, Node *list) {
     free(temp);
 }
 
-void printAll(Node *list) {
+void printList(Node *list) {
     Node *curNode;
     curNode = list;
     while (curNode->next != NULL) {
