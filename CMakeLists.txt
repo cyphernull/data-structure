@@ -8,4 +8,4 @@ include_directories(Sqlist)
 
 add_executable(data_structure
         List/list.h
-        Sqlist/sqlist.h main.c)
+        Sqlist/sqlist.h main.c Dlist/dlist.h)

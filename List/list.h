@@ -8,22 +8,22 @@
 #include "stdlib.h"
 #include "stdio.h"
 
-typedef struct Node {
+typedef struct LNode {
     int element;
-    struct Node *next;
-} Node;
+    struct LNode *next;
+} LNode;
 
-Node *createList(int element) {
-    Node *L;
-    L = (Node *) malloc(sizeof(Node));
+LNode *createList(int element) {
+    LNode *L;
+    L = (LNode *) malloc(sizeof(LNode));
     L->element = element;
     L->next = NULL;
     return L;
 }
 
-void appendList(int element, Node *list) {
-    Node *newLast;
-    newLast = (Node *) malloc(sizeof(Node));
+void appendList(int element, LNode *list) {
+    LNode *newLast;
+    newLast = (LNode *) malloc(sizeof(LNode));
     newLast->element = element;
     while (list->next != NULL) {
         list = list->next;
@@ -32,32 +32,32 @@ void appendList(int element, Node *list) {
     newLast->next = NULL;
 }
 
-void insertList(int element, Node *position) {
-    Node *temp;
-    temp = (Node *) malloc(sizeof(Node));
+void insertList(int element, LNode *position) {
+    LNode *temp;
+    temp = (LNode *) malloc(sizeof(LNode));
     temp->element = element;
     temp->next = position->next;
     position->next = temp;
 }
 
-Node *findPrev(int element, Node *list) {
+LNode *findPrev(int element, LNode *list) {
     while (list->next != NULL && list->next->element != element) {
         list = list->next;
     }
     return list;
 }
 
-void deleteList(int element, Node *list) {
-    Node *prev;
-    Node *temp;
+void deleteList(int element, LNode *list) {
+    LNode *prev;
+    LNode *temp;
     prev = findPrev(element, list);
     temp = prev->next;
     prev->next = prev->next->next;
     free(temp);
 }
 
-void printList(Node *list) {
-    Node *curNode;
+void printList(LNode *list) {
+    LNode *curNode;
     curNode = list;
     while (curNode->next != NULL) {
         printf("%d ", curNode->element);
