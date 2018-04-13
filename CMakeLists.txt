@@ -3,9 +3,8 @@ project(data_structure C)
 
 set(CMAKE_C_STANDARD 11)
 
-include_directories(List)
-include_directories(Sqlist)
+include_directories(List Sqlist Dlist)
 
 add_executable(data_structure
         List/list.h
-        Sqlist/sqlist.h main.c Dlist/dlist.h)
+        Sqlist/sqlist.h Dlist/dlist.h main.c)
