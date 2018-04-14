@@ -21,9 +21,10 @@ int main() {
 //    DLNode *L = createDLNode(20);
 //    printf("%d", L->element);
 //    return 0;
-    int array[13] = {1, 45, 56, 7, 90, 34, 56, 100, 77, 0,3, 123, 7};
+    int array[13] = {1, 45, 56, 7, 90, 34, 56, 100, 77, 0, 3, 123, 7};
     //insertSort(array,13);
-    binaryInsertSort(array, 13);
+    //shellSort(array, 13);
+    //binaryInsertSort(array,13);
     for (int i = 0; i < 13; ++i) {
         printf("%d ", array[i]);
     }

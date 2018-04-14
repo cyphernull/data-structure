@@ -20,10 +20,10 @@ void insertSort(int *array, int length) {
 
 void binaryInsertSort(int *array, int length) {
     int i, j, mid, low, high, temp;
-    for (i=1; i < length; i++) {
+    for (i = 1; i < length; i++) {
         temp = array[i];
         low = 0;
-        high = i-1;
+        high = i - 1;
         while (low <= high) {
             mid = (low + high) / 2;
             if (temp > array[mid]) {
@@ -32,10 +32,29 @@ void binaryInsertSort(int *array, int length) {
                 high = mid - 1;
             }
         }
-        for (j = i-1; j >= low; j--) {
+        for (j = i - 1; j >= low; j--) {
             array[j + 1] = array[j];
         }
         array[low] = temp;
+    }
+}
+
+void shellSort(int *array, int length) {
+    int i, j, k, step, temp;
+    for (step = length / 2; step > 0; step /= 2) {
+        for (i = 0; i < step; i++) {
+            for (j = i + step; j < length; j += step) {
+                if (array[j] < array[j - step]) {
+                    temp = array[j];
+                    k = j - step;
+                    while (k >= 0 && temp < array[k]) {
+                        array[k + step] = array[k];
+                        k = k - step;
+                    }
+                    array[k + step] = temp;
+                }
+            }
+        }
     }
 }
 
