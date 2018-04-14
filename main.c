@@ -25,6 +25,8 @@ int main() {
     //insertSort(array,13);
     //shellSort(array, 13);
     //binaryInsertSort(array,13);
+    //bubbleSort(array,13);
+    quickSort(array,0,12);
     for (int i = 0; i < 13; ++i) {
         printf("%d ", array[i]);
     }
