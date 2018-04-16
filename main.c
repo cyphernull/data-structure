@@ -29,7 +29,7 @@ int main() {
     //quickSort(array,0,12);
     //selectSort(array, 13);
     //reverse(array,13);
-    mergeSort(array,0,12);
+    mergeSort(array, 0, 12);
     for (int i = 0; i < 13; ++i) {
         printf("%d ", array[i]);
     }
