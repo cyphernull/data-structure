@@ -3,7 +3,7 @@
 
 #### [线性表](https://github.com/Voyager-One/data-structure/tree/master/Sqlist)（创建👌、插入👌、删除👌、查找👌）
 #### [单链表](https://github.com/Voyager-One/data-structure/tree/master/List)（创建👌、插入👌、删除👌、查找（prev）👌）
-#### [双链表](https://github.com/Voyager-One/data-structure/tree/master/Dlist)（创建👌、插入👌）
+#### [双链表](https://github.com/Voyager-One/data-structure/tree/master/Dlist)（创建👌、插入👌、删除👌、查找（prev）👌）
 
 #### [排序](https://github.com/Voyager-One/data-structure/tree/master/Sort)（直接插入排序👌、折半插入排序👌、希尔排序👌、冒泡排序👌、快速排序👌、选择排序👌、归并排序👌）
 #### 更新中⌛️
