@@ -1,6 +1,8 @@
 # data-structure
 考研数据结构
 
+欢迎各位来补充哦👏
+
 #### [线性表](https://github.com/Voyager-One/data-structure/tree/master/Sqlist)（创建👌、插入👌、删除👌、查找👌）
 #### [单链表](https://github.com/Voyager-One/data-structure/tree/master/List)（创建👌、插入👌、删除👌、查找（prev）👌）
 #### [双链表](https://github.com/Voyager-One/data-structure/tree/master/Dlist)（创建👌、插入👌、删除👌、查找（prev）👌）
