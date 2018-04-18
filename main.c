@@ -6,7 +6,7 @@
 #include "sqlist.h"
 #include "dlist.h"
 #include "sort.h"
-
+#include "btree.h"
 int main() {
 //    Sqlist L = createSqlist();
 //    appendSqlist(&L, 10);
@@ -30,16 +30,22 @@ int main() {
     //for (int i = 0; i < 13; ++i) {
     //printf("%d ", array[i]);
     //}
-    DLNode *L = createDlist(1);
-    appendDlist(L, 2);
-    appendDlist(L, 3);
-    appendDlist(L, 4);
-    appendDlist(L, 5);
-    appendDlist(L, 6);
-    insertDlist(L->next, 30);
+//    DLNode *L = createDlist(1);
+//    appendDlist(L, 2);
+//    appendDlist(L, 3);
+//    appendDlist(L, 4);
+//    appendDlist(L, 5);
+//    appendDlist(L, 6);
+//    insertDlist(L->next, 30);
+//
+//    printDlist(L);
+//    deleteDlist(L, 30);
+//    printDlist(L);
 
-    printDlist(L);
-    deleteDlist(L, 30);
-    printDlist(L);
+    BTNode * root;
+    root = createBTree(1);
+    appendLeft(root, 2);
+    appendRight(root, 3);
+    printf("%d",root->rchild->element);
 
 }
