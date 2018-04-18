@@ -46,6 +46,10 @@ int main() {
     root = createBTree(1);
     appendLeft(root, 2);
     appendRight(root, 3);
-    printf("%d",root->rchild->element);
+    preorder(root);
+    printf("\n");
+    midorder(root);
+    printf("\n");
+    postorder(root);
 
 }

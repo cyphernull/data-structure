@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b6e94c7-a7dc-4407-888b-e2951fa56d84" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Btree/btree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Btree/btree.h" beforeDir="false" afterPath="$PROJECT_DIR$/Btree/btree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
               <folding>
                 <element signature="e#45#62#0" expanded="true" />
               </folding>
@@ -43,8 +41,8 @@
       <file leaf-file-name="btree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Btree/btree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
               <folding>
                 <element signature="e#108#127#0" expanded="true" />
               </folding>
@@ -72,8 +70,8 @@
         <option value="$PROJECT_DIR$/Sort/sort.h" />
         <option value="$PROJECT_DIR$/Dlist/dlist.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/Btree/btree.h" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
@@ -165,12 +163,12 @@
       <workItem from="1523675237331" duration="10491000" />
       <workItem from="1523761413798" duration="887000" />
       <workItem from="1523864100488" duration="64000" />
-      <workItem from="1524029519162" duration="3896000" />
+      <workItem from="1524029519162" duration="4243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19209000" />
+    <option name="totallyTimeSpent" value="19556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="0" />
@@ -450,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Btree/btree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        <state relative-caret-position="266">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="e#108#127#0" expanded="true" />
           </folding>
@@ -460,8 +458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="306">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding>
             <element signature="e#45#62#0" expanded="true" />
           </folding>

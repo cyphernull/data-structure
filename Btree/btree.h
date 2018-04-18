@@ -41,4 +41,28 @@ void appendRight(BTNode *r, int element) {
     r->rchild = rightChild;
 }
 
+void preorder(BTNode *r) {
+    if (r != NULL) {
+        printf("%d ", r->element);
+        preorder(r->lchild);
+        preorder(r->rchild);
+    }
+}
+
+void midorder(BTNode *r) {
+    if (r != NULL) {
+        preorder(r->lchild);
+        printf("%d ", r->element);
+        preorder(r->rchild);
+    }
+}
+
+void postorder(BTNode *r) {
+    if (r != NULL) {
+        preorder(r->lchild);
+        preorder(r->rchild);
+        printf("%d ", r->element);
+    }
+}
+
 #endif //DATA_STRUCTURE_BTREE_H
