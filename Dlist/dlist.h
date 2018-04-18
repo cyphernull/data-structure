@@ -14,7 +14,7 @@ typedef struct DLNode {
     struct DLNode *next;
 } DLNode;
 
-DLNode *createDLNode(int element) {
+DLNode *createDlist(int element) {
     DLNode *L;
     L = (DLNode *) malloc(sizeof(DLNode));
     L->element = element;
@@ -23,4 +23,24 @@ DLNode *createDLNode(int element) {
     return L;
 }
 
+void appendDlist(DLNode *L, int element) {
+    DLNode *last;
+    last = (DLNode *) malloc(sizeof(DLNode));
+    last->prior = NULL;
+    last->next = NULL;
+    while(L->next != NULL){
+        L = L->next;
+    }
+    last->element = element;
+    L->next = last;
+    last->prior = L;
+}
+
+void printDlist(DLNode *L){
+    while (L->next != NULL){
+        printf("%d ",L->element);
+        L = L->next;
+    }
+    printf("%d \n", L->element);
+}
 #endif //DATA_STRUCTURE_DLIST_H

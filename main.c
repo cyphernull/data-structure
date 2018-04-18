@@ -17,11 +17,8 @@ int main() {
 //    printSqlist(L);
 //    deleteSqlist(&L, 0);
 //    printSqlist(L);
-//
-//    DLNode *L = createDLNode(20);
-//    printf("%d", L->element);
 //    return 0;
-    int array[13] = {1, 45, 56, 7, 90, 34, 56, 100, 77, 0, 3, 123, 7};
+    //int array[13] = {1, 45, 56, 7, 90, 34, 56, 100, 77, 0, 3, 123, 7};
     //insertSort(array,13);
     //shellSort(array, 13);
     //binaryInsertSort(array,13);
@@ -29,8 +26,15 @@ int main() {
     //quickSort(array,0,12);
     //selectSort(array, 13);
     //reverse(array,13);
-    mergeSort(array, 0, 12);
-    for (int i = 0; i < 13; ++i) {
-        printf("%d ", array[i]);
-    }
+    //mergeSort(array, 0, 12);
+    //for (int i = 0; i < 13; ++i) {
+        //printf("%d ", array[i]);
+    //}
+    DLNode *L = createDlist(1);
+    appendDlist(L,2);
+    appendDlist(L,3);
+    appendDlist(L,4);
+    appendDlist(L,5);
+    appendDlist(L,6);
+    printDlist(L);
 }
