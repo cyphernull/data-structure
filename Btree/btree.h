@@ -4,6 +4,7 @@
 
 #ifndef DATA_STRUCTURE_BTREE_H
 #define DATA_STRUCTURE_BTREE_H
+#define MAXSIZE 1000
 
 #include "stdlib.h"
 #include "stdio.h"
