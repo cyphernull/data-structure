@@ -28,7 +28,7 @@ void appendDlist(DLNode *L, int element) {
     last = (DLNode *) malloc(sizeof(DLNode));
     last->prior = NULL;
     last->next = NULL;
-    while(L->next != NULL){
+    while (L->next != NULL) {
         L = L->next;
     }
     last->element = element;
@@ -36,11 +36,39 @@ void appendDlist(DLNode *L, int element) {
     last->prior = L;
 }
 
-void printDlist(DLNode *L){
-    while (L->next != NULL){
-        printf("%d ",L->element);
+void insertDlist(DLNode *P, int element) {
+    DLNode *temp;
+    temp = (DLNode *) malloc(sizeof(DLNode));
+    temp->element = element;
+    temp->next = P->next;
+    temp->prior = P;
+    P->next = temp;
+    temp->next->prior = temp;
+}
+
+DLNode *findPrevDLNode(DLNode *L, int element) {
+    while (L->next != NULL && L->next->element != element) {
+        L = L->next;
+    }
+    return L;
+}
+
+void deleteDlist(DLNode *L, int element) {
+    DLNode *temp;
+    DLNode *prev;
+    prev = findPrevDLNode(L, element);
+    temp = prev->next;
+    prev->next = temp->next;
+    temp->next->prior = prev;
+    free(temp);
+}
+
+void printDlist(DLNode *L) {
+    while (L->next != NULL) {
+        printf("%d ", L->element);
         L = L->next;
     }
     printf("%d \n", L->element);
 }
+
 #endif //DATA_STRUCTURE_DLIST_H

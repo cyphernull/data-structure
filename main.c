@@ -28,13 +28,18 @@ int main() {
     //reverse(array,13);
     //mergeSort(array, 0, 12);
     //for (int i = 0; i < 13; ++i) {
-        //printf("%d ", array[i]);
+    //printf("%d ", array[i]);
     //}
     DLNode *L = createDlist(1);
-    appendDlist(L,2);
-    appendDlist(L,3);
-    appendDlist(L,4);
-    appendDlist(L,5);
-    appendDlist(L,6);
+    appendDlist(L, 2);
+    appendDlist(L, 3);
+    appendDlist(L, 4);
+    appendDlist(L, 5);
+    appendDlist(L, 6);
+    insertDlist(L->next, 30);
+
     printDlist(L);
+    deleteDlist(L, 30);
+    printDlist(L);
+
 }
